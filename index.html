@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="description"
+      content="Live positions of London Underground trains, estimated from TfL open data."
+    />
+    <title>Tube Live — London Underground tracker</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <header class="brand" aria-label="Tube Live">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <h1 class="brand-name"><strong>Tube</strong> Live</h1>
+    </header>
+
+    <aside id="legend" class="panel legend" aria-label="Lines"></aside>
+
+    <div id="clock" class="panel clock" aria-live="off"></div>
+
+    <footer id="status-strip" class="panel status-strip" hidden></footer>
+
+    <div id="loading" class="loading">
+      <span class="loading-text">Loading network…</span>
+    </div>
+
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
